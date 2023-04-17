@@ -2,21 +2,18 @@ import 'dart:async';
 import 'dart:collection';
 import 'dart:io';
 
+import 'package:cache_manager/src/web/queue_item.dart';
 import 'package:clock/clock.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_cache_manager/flutter_cache_manager.dart';
-import 'package:flutter_cache_manager/src/cache_store.dart';
-import 'package:flutter_cache_manager/src/result/file_info.dart';
-import 'package:flutter_cache_manager/src/result/file_response.dart';
-import 'package:flutter_cache_manager/src/storage/cache_object.dart';
-import 'package:flutter_cache_manager/src/web/file_service.dart';
-import 'package:flutter_cache_manager/src/web/queue_item.dart';
 import 'package:pedantic/pedantic.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../flutter_cache_manager.dart';
+import '../cache_store.dart';
 import '../logger.dart';
+import '../storage/cache_object.dart';
 
 ///Flutter Cache Manager
 ///Copyright (c) 2019 Rene Floor

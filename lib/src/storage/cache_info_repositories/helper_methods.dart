@@ -1,6 +1,7 @@
 import 'dart:async';
 
-import 'package:flutter_cache_manager/flutter_cache_manager.dart';
+import '../../../flutter_cache_manager.dart';
+
 
 mixin CacheInfoRepositoryHelperMethods on CacheInfoRepository {
   var openConnections = 0;

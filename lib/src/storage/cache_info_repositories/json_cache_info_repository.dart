@@ -5,10 +5,10 @@ import 'dart:math';
 
 import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_cache_manager/src/storage/cache_object.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 
+import '../cache_object.dart';
 import 'cache_info_repository.dart';
 import 'helper_methods.dart';
 

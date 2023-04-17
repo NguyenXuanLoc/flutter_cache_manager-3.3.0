@@ -1,4 +1,5 @@
-import 'package:flutter_cache_manager/src/result/file_response.dart';
+
+import '../../flutter_cache_manager.dart';
 
 /// Progress of the file that is being downloaded from the [originalUrl].
 class DownloadProgress extends FileResponse {

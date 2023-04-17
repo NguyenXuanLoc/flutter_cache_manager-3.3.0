@@ -1,4 +1,3 @@
-import 'package:flutter_cache_manager/src/cache_managers/image_cache_manager.dart';
 
 import '../../flutter_cache_manager.dart';
 import '../config/config.dart';

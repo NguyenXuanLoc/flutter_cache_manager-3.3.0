@@ -4,7 +4,8 @@ import 'dart:ui' as ui;
 
 import 'package:file/file.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_cache_manager/flutter_cache_manager.dart';
+
+import '../../flutter_cache_manager.dart';
 
 const supportedFileNames = ['jpg', 'jpeg', 'png', 'tga', 'cur', 'ico','obj'];
 mixin ImageCacheManager on BaseCacheManager {

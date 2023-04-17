@@ -1,5 +1,6 @@
 import 'package:file/file.dart';
-import 'package:flutter_cache_manager/src/result/file_response.dart';
+
+import '../../flutter_cache_manager.dart';
 
 ///Flutter Cache Manager
 ///Copyright (c) 2019 Rene Floor
