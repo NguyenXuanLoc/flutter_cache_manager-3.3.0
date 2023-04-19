@@ -12,8 +12,14 @@ class IOFileSystem implements FileSystem {
   IOFileSystem(this._cacheKey) : _fileDir = createDirectory(_cacheKey);
 
   static Future<Directory> createDirectory(String key) async {
-    var baseDir = await getTemporaryDirectory();
-    var path = p.join(baseDir.path, key);
+    print("TAG CREATE DIRECTORY");
+    var baseDir = await getExternalCacheDirectories();
+    var temporary = await getTemporaryDirectory();
+    var path = p.join(
+        baseDir != null && baseDir.isNotEmpty
+            ? baseDir[0].path
+            : temporary.path,
+        key);
 
     var fs = const LocalFileSystem();
     var directory = fs.directory((path));
