@@ -16,9 +16,9 @@ class IOFileSystem implements FileSystem {
     var baseDir = await getExternalCacheDirectories();
     var temporary = await getTemporaryDirectory();
     var path = p.join(
-        baseDir != null && baseDir.isNotEmpty
+        temporary.path/*baseDir != null && baseDir.isNotEmpty
             ? baseDir[0].path
-            : temporary.path,
+            : temporary.path*/,
         key);
 
     var fs = const LocalFileSystem();
