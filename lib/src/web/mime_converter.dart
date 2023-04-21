@@ -13,7 +13,7 @@ const mimeTypes = {
   'application/epub+zip': '.epub',
   'application/gzip': '.gz',
   'application/java-archive': '.jar',
-  'application/json': '.json',
+  'application/json': '.dabab',
   'application/ld+json': '.jsonld',
   'application/msword': '.doc',
   'application/octet-stream': '.obj',
